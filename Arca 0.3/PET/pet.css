@@ -1,0 +1,244 @@
+.pet-content{
+    padding:40px;
+}
+
+.pets-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    align-items:start;
+}
+
+.pet-list-card,
+.pet-details-card{
+    background:#fff;
+    border-radius:24px;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.pet-list-card{
+    padding:34px;
+    min-height:720px;
+}
+
+.pet-details-card{
+    width:100%;
+    min-height:720px;
+    padding:32px;
+}
+
+.pet-list-card h2{
+    font-size:38px;
+    font-weight:400;
+    color:#667085;
+    margin-bottom:34px;
+}
+
+.pets-table{
+    display:flex;
+    flex-direction:column;
+}
+
+.pets-table-header,
+.pet-item{
+    display:grid;
+    grid-template-columns:1.7fr .8fr 1fr 110px;
+    align-items:center;
+    column-gap:16px;
+}
+
+.pets-table-header{
+    font-size:24px;
+    font-weight:700;
+    color:#2c2f36;
+    padding-bottom:20px;
+}
+
+.pets-table-header span{
+    display:flex;
+    align-items:center;
+}
+
+.pet-item{
+    min-height:92px;
+    border-top:1px solid #e7ebf1;
+    font-size:18px;
+    color:#444;
+}
+
+.pet-item > span{
+    display:flex;
+    align-items:center;
+}
+
+.active-pet{
+    background:#f7fbfd;
+}
+
+.pet-name,
+.pet-profile{
+    display:flex;
+    align-items:center;
+}
+
+.pet-name{
+    gap:14px;
+}
+
+.pet-profile{
+    gap:14px;
+}
+
+.pet-name img,
+.pet-profile img{
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.pet-name img{
+    width:56px;
+    height:56px;
+}
+
+.pet-profile img{
+    width:64px;
+    height:64px;
+    border:3px solid #aee9f2;
+}
+
+.status{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100px;
+    height:30px;
+    border-radius:999px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.status-active{
+    background:#dff6e4;
+    color:#49a65d;
+}
+
+.status-warning{
+    background:#fef1c8;
+    color:#c49b1e;
+}
+
+.details-title{
+    display:block;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:20px;
+    color:#444;
+}
+
+.pet-profile-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:26px;
+}
+
+.pet-profile-info h3{
+    font-size:28px;
+    margin-bottom:6px;
+}
+
+.pet-form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.full-width{
+    grid-column:1 / -1;
+}
+
+.pet-details-card .form-group label{
+    font-size:20px;
+    color:#444;
+    margin-bottom:8px;
+}
+
+.pet-details-card .form-group input,
+.pet-details-card .form-group select,
+.pet-details-card .form-group textarea{
+    width:100%;
+    background:#f5f6f8;
+    border:1px solid #d8dde5;
+    border-radius:6px;
+    color:#666;
+    resize:none;
+    outline:none;
+    pointer-events:none;
+    font-size:20px;
+}
+
+.pet-details-card .form-group input,
+.pet-details-card .form-group select{
+    height:56px;
+    padding:0 16px;
+}
+
+.pet-details-card .form-group textarea{
+    height:120px;
+    padding:16px;
+}
+
+.delete-btn{
+    margin-top:24px;
+    border:none;
+    background:none;
+    color:#ff4b4b;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+@media(max-width:1100px){
+
+    .pets-wrapper{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .pet-content{
+        padding:20px;
+    }
+
+    .pet-form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .pets-table-header,
+    .pet-item{
+        grid-template-columns:1fr;
+        gap:10px;
+        padding:18px 0;
+    }
+
+    .pets-table-header{
+        display:none;
+    }
+
+    .pet-profile-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .pet-list-card h2{
+        font-size:28px;
+    }
+
+    .page-title{
+        font-size:38px;
+    }
+}
