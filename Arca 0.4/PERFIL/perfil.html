@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="perfil.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-content">
+
+                <div class="profile-sidebar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                    <h3>Bem vindo<br><b>Khazix</b></h3>
+                </div>
+
+                <nav class="sidebar-menu">
+
+                    <a href="#">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                    <a href="../PET/pet.html">
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Cadastro Pet</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Agendamento</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Encerrar sessão</span>
+            </a>
+
+        </aside>
+
+        <main class="main" id="main">
+
+            <header class="topbar">
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="../index.html">LOGO</a>
+                </div>
+
+            </header>
+
+            <section class="content">
+
+                <h1 class="page-title">Meu Perfil</h1>
+
+                <div class="profile-card">
+
+                    <div class="profile-banner"></div>
+
+                    <div class="profile-header">
+
+                        <div class="profile-user">
+
+                            <img src="https://i.pravatar.cc/150?img=12" alt="">
+
+                            <div class="profile-info">
+                                <h3>Khazix Ribeiro Santana</h3>
+                                <span>Tutor desde 6767</span>
+                            </div>
+
+                        </div>
+
+                        <button class="edit-btn">
+                            Editar Perfil
+                        </button>
+
+                    </div>
+
+                    <div class="profile-content">
+
+                        <h2>Dados pessoais</h2>
+                        <p>Informações usadas no seu cadastro.</p>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" value="Khazix" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Sobrenome</label>
+                                <input type="text" value="Ribeiro Santana" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>CPF</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Data de nascimento</label>
+                                <input type="text" value="11/09/2001" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Gênero</label>
+
+                                <select disabled>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Celular</label>
+                                <input type="text" value="(27) 67676-****" disabled>
+                            </div>
+
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <h2>Endereço</h2>
+                        <p>Onde devemos te encontrar.</p>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label>CEP</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Bairro</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                        </div>
+
+                        <div class="address-grid">
+
+                            <div class="form-group">
+                                <label>Rua</label>
+                                <input type="text" value="Rua Jugle Diff" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Número</label>
+                                <input type="text" value="444" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Cidade</label>
+                                <input type="text" placeholder="000.000.000-00" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Estado(UF)</label>
+
+                                <select disabled>
+                                    <option>ES</option>
+                                    <option>SP</option>
+                                    <option>RJ</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../sidebar.js"></script>
+
+</body>
+</html>
