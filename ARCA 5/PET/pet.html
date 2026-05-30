@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cachorro</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../PERFIL/perfil.css">
+    <link rel="stylesheet" href="pet.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-content">
+
+                <div class="profile-sidebar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                    <h3>Bem vindo<br><b>Khazix</b></h3>
+                </div>
+
+                <nav class="sidebar-menu">
+
+                    <a href="../PERFIL/perfil.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                    <a href="#" class="active-link">
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Cadastro Pet</span>
+                    </a>
+
+                    <a href="../AGENDAMENTO/agendamento.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Agendamento</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Encerrar sessão</span>
+            </a>
+
+        </aside>
+
+        <main class="main" id="main">
+
+            <header class="topbar">
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="../index.html">LOGO</a>
+                </div>
+
+            </header>
+
+            <section class="content">
+
+                <h1 class="page-title">Seus Pets</h1>
+
+                <div class="pets-wrapper">
+
+                    <div class="pet-list-card">
+
+                        <h2>Lista de Pets</h2>
+
+                        <div class="pets-table">
+
+                            <div class="pets-table-header">
+                                <span>Pet</span>
+                                <span>Sexo</span>
+                                <span>Tipo</span>
+                                <span>Status</span>
+                            </div>
+
+                            <div class="pet-item active-pet">
+
+                                <div class="pet-name">
+                                    <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=200&auto=format&fit=crop"
+                                        alt="">
+                                    <span>Sirilo</span>
+                                </div>
+
+                                <span>Macho</span>
+                                <span>Cachorro</span>
+                                <span class="status status-active">Em dia</span>
+
+                            </div>
+
+                            <div class="pet-item">
+
+                                <div class="pet-name">
+                                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=200&auto=format&fit=crop"
+                                        alt="">
+                                    <span>Nina</span>
+                                </div>
+
+                                <span>Fêmea</span>
+                                <span>Cachorro</span>
+                                <span class="status status-active">Em dia</span>
+
+                            </div>
+
+                            <div class="pet-item">
+
+                                <div class="pet-name">
+                                    <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=200&auto=format&fit=crop"
+                                        alt="">
+                                    <span>Kika</span>
+                                </div>
+
+                                <span>Fêmea</span>
+                                <span>Cachorro</span>
+                                <span class="status status-warning">Pendente</span>
+
+                            </div>
+
+                            <div class="pet-item">
+
+                                <div class="pet-name">
+                                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=200&auto=format&fit=crop"
+                                        alt="">
+                                    <span>Jaison</span>
+                                </div>
+
+                                <span>Macho</span>
+                                <span>Gato</span>
+                                <span class="status status-active">Em dia</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="pet-details-card">
+
+                        <span class="details-title">Detalhes</span>
+
+                        <div class="pet-profile-header">
+
+                            <div class="pet-profile">
+
+                                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=200&auto=format&fit=crop"
+                                    alt="">
+
+                                <div class="pet-profile-info">
+                                    <h3>Sirilo</h3>
+                                    <span class="status status-active">Em dia</span>
+                                </div>
+
+                            </div>
+
+                            <button class="edit-btn">
+                                Editar
+                            </button>
+
+                        </div>
+
+                        <div class="pet-form-grid">
+
+                            <div class="form-group full-width">
+                                <label>Nome</label>
+                                <input type="text" value="Khazix" disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Espécie</label>
+
+                                <select disabled>
+                                    <option>Cachorro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Raça</label>
+
+                                <select disabled>
+                                    <option>Bernese</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Sexo</label>
+
+                                <select disabled>
+                                    <option>Macho</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Data de Nascimento</label>
+                                <input type="text" value="02/03/1971" disabled>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label>Marcações Únicas</label>
+                                <textarea disabled>Jugle Diff</textarea>
+                            </div>
+
+                        </div>
+
+                        <button class="delete-btn">
+                            <i class="fa-solid fa-trash"></i>
+                            Excluir cadastro
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../sidebar.js"></script>
+
+</body>
+
+</html>

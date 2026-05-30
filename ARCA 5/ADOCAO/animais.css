@@ -1,0 +1,300 @@
+.adoption-banner{
+    height:280px;
+    background:var(--azul);
+    gap: 10px;
+}
+
+.banner-dog img{
+    height:280px;
+    margin-top: 5px;
+}
+
+.banner-message{
+    max-width:620px;
+    color:var(--branco);
+    font-size:20px;
+    line-height:1.2;
+    font-weight: 600;
+}
+
+.adoption-content{
+    background:#c8dbea;
+    min-height:100vh;
+}
+
+.filters-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--branco);
+    border-radius:12px;
+    width:fit-content;
+    max-width:100%;
+    margin:0 auto 40px;
+    padding:8px 15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.search-group{
+    display:flex;
+    align-items:center;
+}
+
+.search-group input{
+    width:250px;
+    height:34px;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:14px;
+}
+
+.filter-divider{
+    width:1px;
+    height:24px;
+    background:#d8d8d8;
+    margin:0 10px;
+}
+
+.filter-category{
+    display:flex;
+    align-items:center;
+
+    gap:4px;
+}
+
+.filter-chip{
+    height:28px;
+    border:none;
+    background:#f3f3f3;
+    border-radius:14px;
+    padding:0 10px;
+    font-size:12px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.filter-chip:hover{
+    background:#e9e9e9;
+}
+
+.filter-chip.active{
+    background:var(--azul);
+    color:var(--branco);
+}
+
+.animals-grid{
+    display:grid;
+    grid-template-columns: repeat(3,260px);
+    justify-content:center;
+    gap:75px;
+}
+
+.animal-image{
+    position:relative;
+    width:100%;
+}
+
+.animal-image img{
+    display:block;
+    width:100%;
+}
+
+.tags{
+    position:absolute;
+    top:8px;
+    left:6px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:4px;
+    z-index:2;
+    max-width:90%;
+}
+
+.tag-status{
+    background:var(--laranja);
+    color:var(--branco);
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:600;
+}
+
+.adoption-card .button{
+    display:block;
+    width:100%;
+    text-align:center;
+    margin-top:auto;
+    box-sizing:border-box;
+}
+
+.pagination{
+    gap:8px;
+    margin-top:50px;
+}
+
+.pagination button{
+    width:32px;
+    height:32px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    background:var(--branco);
+    transition:.2s;
+}
+
+.pagination button:hover{
+    transform:scale(1.1);
+}
+
+.page-btn.active{
+    background:var(--azul);
+    color:var(--branco);
+}
+
+button.button{
+    border:none;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
+    font:inherit;
+}
+
+.popup{
+    width:850px;
+    max-width:90vw;
+    background:var(--branco);
+    padding:30px;
+    border-radius:20px;
+    position:relative;
+}
+
+.popup-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.popup-overlay.active{
+    display:flex;
+}
+
+.popup-body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+.popup-image{
+    width:320px;
+    flex-shrink:0;
+    position:relative;
+}
+
+.popup-image img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:16px;
+}
+
+.popup-info{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+}
+.popup-info p{
+    font-size:18px;
+}
+.popup-info strong{
+    color:var(--azul);
+}
+.popup-info .button{
+    margin-top:10px;
+}
+
+.popup-close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    border:none;
+    background:none;
+    font-size:35px;
+    cursor:pointer;
+}
+.popup-success{
+    width:400px;
+    background:var(--branco);
+    padding:30px;
+}
+
+.success-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--azul);
+    color:var(--branco);
+    font-size:32px;
+}
+
+@media(max-width:900px){
+
+    .adoption-banner{
+        flex-direction:column;
+        text-align:center;
+        height:auto;
+        padding:40px 20px;
+        gap:30px;
+    }
+
+    .banner-message{
+        font-size:22px;
+    }
+
+    .filters-container{
+        flex-direction:column;
+        align-items:stretch;
+        width:100%;
+        padding:12px;
+    }
+
+    .search-group{
+        width:100%;
+    }
+
+    .search-group input{
+        width:100%;
+    }
+
+    .filter-divider{
+        display:none;
+    }
+
+    .filter-category{
+        justify-content:center;
+        flex-wrap:wrap;
+        margin-top:8px;
+    }
+
+    .animals-grid{
+        grid-template-columns:
+            repeat(2,260px);
+    }
+
+}

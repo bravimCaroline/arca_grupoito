@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../PERFIL/perfil.css">
+    <link rel="stylesheet" href="agd.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-content">
+
+                <div class="profile-sidebar">
+                    <img src="https://i.pravatar.cc/150?img=12" alt="">
+                    <h3>Bem vindo<br><b>Khazix</b></h3>
+                </div>
+
+                <nav class="sidebar-menu">
+
+                    <a href="../PERFIL/perfil.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Perfil</span>
+                    </a>
+
+                    <a href="../PET/pet.html">
+                        <i class="fa-solid fa-dog"></i>
+                        <span>Cadastro Pet</span>
+                    </a>
+
+                    <a href="#" class="active-link">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Agendamento</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <a href="#" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Encerrar sessão</span>
+            </a>
+
+        </aside>
+
+        <main class="main" id="main">
+
+            <header class="topbar">
+
+                <button class="toggle-btn" id="toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="logo-title">
+                    <a href="../index.html">LOGO</a>
+                </div>
+
+            </header>
+
+            <section class="content">
+
+                <h1 class="page-title">Seus Agendamentos</h1>
+
+                <div class="schedule-header">
+                    <button class="new-schedule-btn">
+                        Novo Agendamento
+                    </button>
+                </div>
+
+                <div class="schedule-stats">
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Total</span>
+                            <strong>7</strong>
+                        </div>
+
+                        <div class="stat-icon blue">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Concluídas</span>
+                            <strong>2</strong>
+                        </div>
+
+                        <div class="stat-icon green">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Remarcar</span>
+                            <strong>1</strong>
+                        </div>
+
+                        <div class="stat-icon yellow">
+                            <i class="fa-regular fa-calendar-minus"></i>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div>
+                            <span>Canceladas</span>
+                            <strong>4</strong>
+                        </div>
+
+                        <div class="stat-icon red">
+                            <i class="fa-regular fa-calendar-xmark"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="schedule-layout">
+
+                    <div class="schedule-list-card">
+
+                        <div class="schedule-filters">
+
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Busque o agendamento">
+                            </div>
+
+                            <select>
+                                <option>Todos</option>
+                            </select>
+
+                        </div>
+
+                        <div class="appointment-list">
+
+                            <div class="appointment-item active">
+
+                                <div class="appointment-icon">
+                                    <i class="fa-solid fa-stethoscope"></i>
+                                </div>
+
+                                <div class="appointment-info">
+
+                                    <div class="appointment-top">
+                                        <span>A-4821</span>
+                                        <span class="badge badge-green">
+                                            Marcado
+                                        </span>
+                                    </div>
+
+                                    <h4>Consulta de rotina - Nina</h4>
+
+                                    <small>18/05/2026 - 08:40</small>
+                                    <small>Dr. Firmino Gonçalves</small>
+
+                                </div>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+
+                            <div class="appointment-item">
+
+                                <div class="appointment-icon">
+                                    <i class="fa-solid fa-syringe"></i>
+                                </div>
+
+                                <div class="appointment-info">
+
+                                    <div class="appointment-top">
+                                        <span>A-7424</span>
+                                        <span class="badge badge-yellow">
+                                            Marcado
+                                        </span>
+                                    </div>
+
+                                    <h4>Vacinação - Sirilo</h4>
+
+                                    <small>07/05/2026 - 13:00</small>
+                                    <small>Dr. José Machado</small>
+
+                                </div>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="schedule-details-card">
+
+                        <div class="details-header">
+
+                            <span>A-4821</span>
+
+                            <h2>
+                                Consulta de rotina - Nina
+                            </h2>
+
+                        </div>
+
+                        <div class="details-content">
+
+                            <div class="detail-group">
+                                <label>DATA</label>
+                                <span>28/05/2026 - 09:30</span>
+                            </div>
+
+                            <div class="detail-group">
+                                <label>PROFISSIONAL</label>
+                                <span>Dr. Ricardo Mendes</span>
+                            </div>
+
+                            <div class="detail-group">
+                                <label>CONTATO</label>
+                                <span>(27) 1234-6767</span>
+                            </div>
+
+                            <div class="detail-group">
+                                <label>OBSERVAÇÃO</label>
+
+                                <p>
+                                    Nina apresentou coceira intensa nas orelhas na semana passada.
+                                    Trazer histórico de vacinação atualizado.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="details-actions">
+
+                            <button class="confirm-btn">
+                                Confirmar Presença
+                            </button>
+
+                            <button class="reschedule-btn">
+                                Remarcar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="../sidebar.js"></script>
+
+</body>
+
+</html>
