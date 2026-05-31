@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="animais.css">
 </head>
-
 <body>
 
     <header class="header flex flex-between">
@@ -68,13 +66,13 @@
                     </div>
                     <img src="../PNG/fresh.png" alt="Mr Fresh">
                 </div>
-
                 <h3>Mr.Fresh</h3>
                 <p>Macho | 2 Anos | Porte Medio
-                    <br>50 cm com rabinho feliz</p>
-                    <br>
-                <button class="button button-secondary" onclick="abrirPopupAnimal(
-                    'Mr.Fresh', '2 anos', 'Terra Vermelha', 'Gosta muito de brincar', '../PNG/fresh.png')">Conhecer</button>
+                    <br>50 cm com rabinho feliz
+                </p>
+                <button class="button button-secondary"
+                    onclick="abrirPopupAnimal(
+                    'Mr.Fresh', '2 anos', 'Terra Vermelha', 'Gosta muito de brincar', '../PNG/fresh.png', this)">Conhecer</button>
             </div>
 
             <div class="animal-card card" data-species="cachorro" data-size="pequeno">
@@ -84,43 +82,45 @@
                     </div>
                     <img src="../PNG/roberto.png" alt="Roberto">
                 </div>
-
                 <h3>Roberto</h3>
                 <p>Macho | 2 Meses | Porte Pequeno
-                    <br>Muito alegre e ativo</p>
-                    <br>
-                <button class="button button-secondary" onclick="abrirPopupAnimal(
-                    'Roberto', '2 meses', 'Vitória', 'Muito alegre e ativo', '../PNG/roberto.png')">Conhecer</button>
+                    <br>Muito alegre e ativo
+                </p>
+                <button class="button button-secondary"
+                    onclick="abrirPopupAnimal(
+                    'Roberto', '2 meses', 'Vitória', 'Muito alegre e ativo', '../PNG/roberto.png', this)">Conhecer</button>
             </div>
 
             <div class="animal-card card" data-species="cachorro" data-size="medio">
 
                 <div class="animal-image">
                     <div class="tags">
-                        <span class="tag-status">Vacinado</span>
+                        <span class="tag-status">Vacinada</span>
                     </div>
                     <img src="../PNG/meg.png" alt="Meg">
                 </div>
-
                 <h3>Meg</h3>
-                <p>Fêmea | x | Porte Médio</p>
-                <p>Gosta muito de brincar</p>
-                <a href="#" class="button button-secondary">Conhecer</a>
+                <p>Fêmea | 1 Ano | Porte Médio
+                    <br>Gosta muito de brincar
+                </p>
+                <button class="button button-secondary" onclick="abrirPopupAnimal(
+                    'Meg', '1 ano', 'Vila Velha', 'Gosta muito de brincar', '../PNG/meg.png', this)">Conhecer</button>
 
             </div>
 
             <div class="animal-card card" data-species="cachorro" data-size="medio">
                 <div class="animal-image">
                     <div class="tags">
-                        <span class="tag-status">Vacinado</span>
+                        <span class="tag-status">Vacinada</span>
                     </div>
                     <img src="../PNG/mel.png" alt="Mel">
                 </div>
-
                 <h3>Mel</h3>
-                <p>Fêmea | x | Porte Médio</p>
-                <p>Muito dócil e tranquila</p>
-                <a href="#" class="button button-secondary">Conhecer</a>
+                <p>Fêmea | 1 Ano | Porte Médio
+                    <br>Muito dócil e tranquila
+                </p>
+                <button class="button button-secondary" onclick="abrirPopupAnimal(
+                    'Mel', '1 ano', 'Serra', 'Muito dócil e tranquila', '../PNG/mel.png', this)">Conhecer</button>
             </div>
 
             <div class="animal-card card" data-species="cachorro" data-size="grande">
@@ -131,11 +131,12 @@
                     </div>
                     <img src="../PNG/let.png" alt="Let">
                 </div>
-
                 <h3>Let</h3>
-                <p>Macho | x | Porte Grande</p>
-                <p>Vive sorrindo</p>
-                <a href="#" class="button button-secondary">Conhecer</a>
+                <p>Macho | 8 Anos | Porte Grande
+                    <br>Vive sorrindo
+                </p>
+                <button class="button button-secondary" onclick="abrirPopupAnimal(
+                    'Let', '8 anos', 'Cariacica', 'Vive sorrindo', '../PNG/let.png', this)">Conhecer</button>
             </div>
 
             <div class="animal-card card" data-species="cachorro" data-size="medio">
@@ -146,14 +147,16 @@
                     </div>
                     <img src="../PNG/leia.png" alt="Leia">
                 </div>
-
                 <h3>Leia</h3>
-                <p>Fêmea | 2 Anos | Porte Médio</p>
-                <p>Adora carinho</p>
-                <a href="#" class="button button-secondary">Conhecer</a>
+                <p>Fêmea | 2 Anos | Porte Médio
+                    <br>Adora carinho
+                </p>
+                <button class="button button-secondary" onclick="abrirPopupAnimal(
+                    'Leia', '2 anos', 'Terra vermelha', 'Adora carinho', '../PNG/leia.png', this)">Conhecer</button>
             </div>
 
         </div>
+
 
         <div class="pagination flex flex-center">
             <button id="prev-page">&lt;</button>
@@ -165,97 +168,44 @@
 
     </section>
 
+
     <footer class="footer">
         <p>© 2026 Grupo Oito, Projeto Arca CC1N UVV</p>
     </footer>
 
+
     <div id="popup-animal" class="popup-overlay">
-
-    <div class="popup card">
-
-        <button
-            class="popup-close"
-            onclick="fecharPopupAnimal()">
-
-            ×
-
-        </button>
-
-        <div class="popup-body">
-
-            <div class="popup-image">
-
-                <div class="tags">
-
-                    <span class="tag-status">
-                        Vacinado
-                    </span>
-
+        <div class="popup card">
+            <button class="popup-close" onclick="fecharPopupAnimal()"> × </button>
+            <div class="popup-body">
+                <div class="popup-image">
+                    <div class="tags" id="popup-tags"></div>
+                    <img id="popup-img" src="" alt="Animal">
                 </div>
 
-                <img
-                    id="popup-img"
-                    src=""
-                    alt="Animal">
-
+                <div class="popup-info">
+                    <p><strong>Nome:</strong><span id="popup-nome"></span></p>
+                    <p><strong>Idade:</strong><span id="popup-idade"></span></p>
+                    <p><strong>Localização:</strong><span id="popup-localizacao"></span></p>
+                    <p><strong>Descrição:</strong><span id="popup-descricao"></span></p>
+                    <button class="button button-secondary" onclick="enviarSolicitacao()">
+                        Enviar Solicitação
+                    </button>
+                </div>
             </div>
-
-            <div class="popup-info">
-
-                <p>
-                    <strong>Nome:</strong>
-                    <span id="popup-nome"></span>
-                </p>
-
-                <p>
-                    <strong>Idade:</strong>
-                    <span id="popup-idade"></span>
-                </p>
-
-                <p>
-                    <strong>Localização:</strong>
-                    <span id="popup-localizacao"></span>
-                </p>
-
-                <p>
-                    <strong>Descrição:</strong>
-                    <span id="popup-descricao"></span>
-                </p>
-
-                <button
-                    class="button button-secondary"
-                    onclick="enviarSolicitacao()">
-
-                    Enviar Solicitação
-
-                </button>
-
-            </div>
-
         </div>
-
     </div>
 
-</div>
 
     <div id="popup-sucesso" class="popup-overlay">
         <div class="popup-success card center">
-            <div class="success-icon">
-                ✓
-            </div>
+            <div class="success-icon"> ✓ </div>
             <h2>Solicitação enviada!</h2>
-            <p>
-                A ONG que cuida do animal entrará em contato
-                em até 48 horas.
-            </p>
-            <a href="./PERFIL/perfil.html" class="button button-secondary">
-                Acompanhar no meu perfil
-            </a>
+            <p> A ONG que cuida do animal entrará em contato em até 48 horas. </p>
         </div>
-
     </div>
+
 
     <script src="animais.js"></script>
 </body>
-
 </html>
