@@ -17,6 +17,8 @@
     font-weight: 600;
 }
 
+
+
 .adoption-content{
     background:#c8dbea;
     min-height:100vh;
@@ -82,6 +84,8 @@
     background:var(--azul);
     color:var(--branco);
 }
+
+
 
 .animals-grid{
     display:grid;
@@ -160,7 +164,10 @@ button.button{
     appearance:none;
     -webkit-appearance:none;
     font:inherit;
+    margin-bottom: 12px;
 }
+
+
 
 .popup{
     width:850px;
@@ -253,6 +260,8 @@ button.button{
     font-size:32px;
 }
 
+
+
 @media(max-width:900px){
 
     .adoption-banner{
@@ -296,5 +305,5 @@ button.button{
         grid-template-columns:
             repeat(2,260px);
     }
-
+    
 }
